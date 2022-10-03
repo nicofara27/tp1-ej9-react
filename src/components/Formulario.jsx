@@ -15,7 +15,6 @@ const Formulario = () => {
 
   const handleSubmit = (e) => {
     let form = document.getElementById("form");
-    console.log(cita);
     e.preventDefault();
     setArregloCitas([...arregloCitas, cita]);
     setCita({});
@@ -24,7 +23,6 @@ const Formulario = () => {
 
   const borrarCita = (nombre) => {
     let arregloModificado = arregloCitas.filter((item) => item !== nombre);
-    console.log(nombre)
     setArregloCitas(arregloModificado);
   };
 

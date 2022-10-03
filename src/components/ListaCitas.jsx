@@ -1,7 +1,6 @@
 import Cita from "./Cita";
 
 const ListaCitas = ({ arregloCitas, borrarCita }) => {
-  console.log(arregloCitas.length);
   return (
     <section className="d-flex flex-wrap border-bottom justify-content-around">
       {arregloCitas.length == 0 ? (
